@@ -6,6 +6,7 @@
   "scripts": {
     "pretest": "tsc",
     "test": "istanbul cover ./node_modules/jasmine/bin/jasmine.js -- --config=./jasmine.json",
+    "posttest": "npm run remap-coverage-html && npm run remap-coverage-json",
     "prepack": "npm run bundle",
     "bundle": "node ./bundle.js",
     "remap-coverage-html": "remap-istanbul -i ./coverage/coverage.json -o ./coverage/ts-report -t html",
