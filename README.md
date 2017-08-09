@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/YooShibu/soboku-observable.svg?branch=master)](https://travis-ci.org/YooShibu/soboku-observable)
+[![codecov](https://codecov.io/gh/YooShibu/soboku-observable/branch/master/graph/badge.svg)](https://codecov.io/gh/YooShibu/soboku-observable)
+[![gzip size](http://img.badgesize.io/https://unpkg.com/soboku-observable/dist/soboku-observable.min.js?compression=gzip)](https://unpkg.com/soboku-observable/dist/soboku.min.js)
+
 # soboku-observable
 
 This is javascript package for observable by [soboku](https://github.com/YooShibu/soboku).
