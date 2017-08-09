@@ -36,5 +36,6 @@
   "bugs": {
     "url": "https://github.com/YooShibu/soboku-observable/issues"
   },
-  "homepage": "https://github.com/YooShibu/soboku-observable#readme"
+  "homepage": "https://github.com/YooShibu/soboku-observable#readme",
+  "types": "./index.d.ts"
 }
