@@ -1,6 +1,6 @@
 {
-  "name": "template-ts-library",
-  "version": "1.0.0",
+  "name": "soboku-observable",
+  "version": "0.2.0",
   "description": "template to make library by typescript",
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,18 @@
     "rollup-plugin-typescript": "^0.8.1",
     "rollup-plugin-uglify": "^2.0.1",
     "typescript": "^2.4.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YooShibu/soboku-observable.git"
+  },
+  "keywords": [
+    "observable",
+    "soboku",
+    "reactive"
+  ],
+  "bugs": {
+    "url": "https://github.com/YooShibu/soboku-observable/issues"
+  },
+  "homepage": "https://github.com/YooShibu/soboku-observable#readme"
 }
