@@ -5,7 +5,7 @@ const uglify = require("rollup-plugin-uglify");
 const typescript = require("typescript");
 
 const path = require("path");
-const name = JSON.parse(readFileSync(path.resolve("./node_modules"))).name;
+const name = JSON.parse(readFileSync(path.resolve("./package.json"))).name;
 const entry = path.resolve("./src/index.ts");
 
 
@@ -13,7 +13,8 @@ rollup({
     entry,
     plugins: [
         tsp({ typescript, target: "ES2015" })
-    ]
+    ],
+    external: ["soboku"]
 }).then(val => {
     val.write({
         dest: path.resolve(`./dist/${name}.mjs`),
@@ -27,7 +28,8 @@ rollup({
     entry,
     plugins: [
         tsp({ typescript, target: "ES3" })
-    ]
+    ],
+    external: ["soboku"]
 }).then(val => {
     val.write({
         dest: path.resolve(`./dist/${name}.js`),
@@ -43,11 +45,13 @@ rollup({
         tsp({ typescript, target: "ES3" }),
         uglify()
     ],
+    external: ["soboku"]
 }).then(val => {
     val.write({
         dest: path.resolve(`./dist/${name}.min.js`),
         format: "iife",
-        moduleName: "soboku",
+        globals: { soboku: "soboku" },
+        moduleName: "sobservable",
         sourceMap: true
     });
 });
