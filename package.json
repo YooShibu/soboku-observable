@@ -23,5 +23,6 @@
     "rollup-plugin-typescript": "^0.8.1",
     "rollup-plugin-uglify": "^2.0.1",
     "typescript": "^2.4.2"
-  }
+  },
+  "types": "./index.d.ts"
 }
