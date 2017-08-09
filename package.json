@@ -12,6 +12,13 @@
     "remap-coverage-json": "remap-istanbul -i ./coverage/coverage.json -o ./coverage/coverage.ts.json -t json"
   },
   "author": "Yohei Shibuya <yoshibu.develop@gmail.com>",
+  "files": [
+    "dist",
+    "index.d.ts",
+    "LISENCE",
+    "package.json",
+    "README.md"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@types/jasmine": "^2.5.53",
